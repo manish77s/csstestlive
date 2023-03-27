@@ -1,17 +1,23 @@
 *{
     margin: 0;
 }
+body{
+    background-color: black;
+    
+}
 h1{
     text-align: center;
     color: white;
     padding: 20px;
     font-size: xxx-large;
     text-shadow: 2px 2px aquamarine;
+    width:100%;
 }
-body{
-    background-color: black;
-    
+hr{
+    width:100%;
 }
+        
+
 .parant{
     display: flex;
     justify-content: space-around;
@@ -51,8 +57,8 @@ body{
     }
     @keyframes mani {
         100%{
-           transform: translate(20px);
-        align-items: center;
+           transform: translate(35%);
+       
         }
         
     }
