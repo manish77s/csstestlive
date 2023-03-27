@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+}
+h1{
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: xxx-large;
+    text-shadow: 2px 2px aquamarine;
+}
+body{
+    background-color: black;
+    
+}
+.parant{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+
+}
+.child{
+    background-color: aquamarine;
+    height: 150px;
+    width: 150px;
+    border-radius: 0px 50%;
+    transition: all;
+    transition-duration: 2s;
+ 
+    box-shadow: 10px 10px 30px white;
+  
+
+}
+
+
+:hover.child{
+    transform: rotate(360deg);
+}
+
+@media (max-width:500px){
+    .parant{
+        flex-direction: column;
+        align-items: start;
+        animation-name:mani;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+   
+    }
+    @keyframes mani {
+        100%{
+           transform: translate(20px);
+        align-items: center;
+        }
+        
+    }
+ .child{
+        height: 100px;
+        width: 100px;
+ }
+    
+}
+
+:hover.child{
+    transform: rotate(360deg);
+}
+
+@media (min-width:500px) and (max-width:1024px){
+    .parant{
+        flex-direction: column;
+    }
+}
